@@ -14,6 +14,10 @@
 		368F97C72B6A0DA000E25FA3 /* Monitor_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368F97C62B6A0DA000E25FA3 /* Monitor_TestTests.swift */; };
 		368F97D12B6A0DA000E25FA3 /* Monitor_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368F97D02B6A0DA000E25FA3 /* Monitor_TestUITests.swift */; };
 		368F97D32B6A0DA000E25FA3 /* Monitor_TestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368F97D22B6A0DA000E25FA3 /* Monitor_TestUITestsLaunchTests.swift */; };
+		368F97E02B6A0E1E00E25FA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368F97DF2B6A0E1E00E25FA3 /* AppDelegate.swift */; };
+		368F97E22B6A0EA200E25FA3 /* myWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368F97E12B6A0EA200E25FA3 /* myWebView.swift */; };
+		368F97E52B6A138D00E25FA3 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 368F97E42B6A138D00E25FA3 /* logo.png */; };
+		368F97E72B6A152000E25FA3 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368F97E62B6A152000E25FA3 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		368F97CC2B6A0DA000E25FA3 /* Monitor TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Monitor TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		368F97D02B6A0DA000E25FA3 /* Monitor_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monitor_TestUITests.swift; sourceTree = "<group>"; };
 		368F97D22B6A0DA000E25FA3 /* Monitor_TestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monitor_TestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		368F97DF2B6A0E1E00E25FA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		368F97E12B6A0EA200E25FA3 /* myWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myWebView.swift; sourceTree = "<group>"; };
+		368F97E42B6A138D00E25FA3 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		368F97E62B6A152000E25FA3 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +102,12 @@
 		368F97B42B6A0D9F00E25FA3 /* Monitor Test */ = {
 			isa = PBXGroup;
 			children = (
+				368F97E32B6A121000E25FA3 /* img */,
 				368F97B52B6A0D9F00E25FA3 /* Monitor_TestApp.swift */,
+				368F97DF2B6A0E1E00E25FA3 /* AppDelegate.swift */,
 				368F97B72B6A0D9F00E25FA3 /* ContentView.swift */,
+				368F97E12B6A0EA200E25FA3 /* myWebView.swift */,
+				368F97E62B6A152000E25FA3 /* Launch Screen.storyboard */,
 				368F97B92B6A0DA000E25FA3 /* Assets.xcassets */,
 				368F97BB2B6A0DA000E25FA3 /* Preview Content */,
 			);
@@ -125,6 +137,14 @@
 				368F97D22B6A0DA000E25FA3 /* Monitor_TestUITestsLaunchTests.swift */,
 			);
 			path = "Monitor TestUITests";
+			sourceTree = "<group>";
+		};
+		368F97E32B6A121000E25FA3 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				368F97E42B6A138D00E25FA3 /* logo.png */,
+			);
+			path = img;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +252,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				368F97BD2B6A0DA000E25FA3 /* Preview Assets.xcassets in Resources */,
+				368F97E52B6A138D00E25FA3 /* logo.png in Resources */,
+				368F97E72B6A152000E25FA3 /* Launch Screen.storyboard in Resources */,
 				368F97BA2B6A0DA000E25FA3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +279,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				368F97E02B6A0E1E00E25FA3 /* AppDelegate.swift in Sources */,
+				368F97E22B6A0EA200E25FA3 /* myWebView.swift in Sources */,
 				368F97B82B6A0D9F00E25FA3 /* ContentView.swift in Sources */,
 				368F97B62B6A0D9F00E25FA3 /* Monitor_TestApp.swift in Sources */,
 			);
@@ -419,6 +443,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Monitor Test/Preview Content\"";
@@ -428,6 +453,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -448,6 +474,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Monitor Test/Preview Content\"";
@@ -457,6 +484,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
