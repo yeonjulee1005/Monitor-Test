@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import WebKit
+@preconcurrency import WebKit
 
 // uikit의 uiview를 사용할 수 있도록 하는 것
 // UIViewControllerRepresentable
